@@ -1,0 +1,49 @@
+# attid : R_A, name: A, predicate: R
+# attr (attid text, name text, predicate text).
+
+# attid : R_A
+probabilistic(attid text).
+
+# aid1 : R_A, aid2: P_B
+# fkey(aid1 text, aid2 text).
+
+# cell : R_12_A, tuple: R_12, attid: R_A
+cell (cell text, tuple text, attid text).
+
+# value : R_12_A, value: a
+# value(cell text, value text).
+
+# cell : R_12_A, t : 17,
+updated (cell text, t bigint).
+
+# c1 : R_12_A, c2 : P_15_B, len: 0 (same relation) or 1 (with fkey)
+# linked (c1 text, c2 text, len bigint).
+
+time (t bigint).
+
+cellupdate (cell text, tuple text, attid text, t bigint).
+
+cellupdate(c,tp,a,t) :- cell(c,tp,a), updated(c,t).
+
+expupdate? (cell text, t bigint).
+
+expupdate(c,t) = TRUE :- updated(c,t).
+
+coupdate? (cell text, t bigint).
+
+coupdate(c,t) = TRUE :- updated(c,t).
+
+
+# expupdate(c,t) = FALSE :- cell(c,_,a),time(t), !EXISTS[updated(c,t)], probabilistic(a).
+
+# linked(c1,c2,0) :- cell(c1,tp,a1),cell(c2,tp,a2),probabilistic(a1), probabilistic(a2).
+# linked(c1,c2,1) :- cell(c1,tp1,a1),cell(cf1,tp1,af1),cell(c2,tp2,a2),cell(cf2,tp2,af2),fkey(af1,af2),value(cf1,v),value(cf2,v),probabilistic(a1), probabilistic(a2).
+
+@weight(a1,a2,t2-t1)
+expupdate(c2,t2) :- cellupdate(c1,tp,a1,t), cell(c2,tp,a2), time(t1),time(t2),t1 < (t2+1), t2-t1 < 2,probabilistic(a1), probabilistic(a2), c1 != c2.
+
+@weight(a1,a2,t2-t1)
+!expupdate(c2,t2) :- cellupdate(c1,tp,a1,t),cell(c2,tp,a2), time(t1),time(t2),t1 < (t2+1), t2-t1 < 2,probabilistic(a1), probabilistic(a2), c1 != c2.
+
+@weight(a1,a2)
+coupdate(c2,t2) :- cellupdate(c1,tp,a1,t1), cellupdate(c2,tp,a2,t2), cell(c2,tp,a2), time(t1),time(t2),t1=t2,probabilistic(a1), probabilistic(a2), c1 != c2.
