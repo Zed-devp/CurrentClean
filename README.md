@@ -132,10 +132,10 @@ Learn model with Deepdive. <br>
 ```Bash
 $ deepdive model learn #Bash
 ```
-Move the output file **UpdPatterns** from folder /CurrentClean/tree/main/DeepDive/Output/ to folder /CurrentClean/tree/main/Input/
+Move the output file <a href="https://github.com/zzheng0620/CurrentClean/tree/main/Input">UpdPatterns</a> from folder /CurrentClean/tree/main/DeepDive/Output/ to folder /CurrentClean/tree/main/Input/
 
 ### 3.5 Identify and Repair Stale Cells 
-Run the Java main code CurrentClean.java in folder /CurrentClean/tree/main/src/, and find the restults in folder /CurrentClean/tree/main/Output. <br>
+Run the Java main code <a href="https://github.com/zzheng0620/CurrentClean/tree/main/src">CurrentClean.java</a> in folder /CurrentClean/tree/main/src/, and find the restults in folder /CurrentClean/tree/main/Output. <br>
 
 Continue with the example of Sensor data, you will find two files as the results: <br>
 
