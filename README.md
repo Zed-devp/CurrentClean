@@ -119,7 +119,21 @@ Take Sensor dataset (mentioned in Section 2.1) as an example. It generates 5 fil
 |Sensor_16_Voltage	|1522986500|
 | ... ...     | ... ...  |
 
-### 3.4 Learn update patterns
+### 3.4 Learn Update Patterns
+Compile with Deepdive. <br>
+```Bash
+$ deepdive compile #Bash
+```
+Run with Deepdive. <br>
+```Bash
+$ deepdive run #Bash
+```
+Learn model with Deepdive. <br>
+```Bash
+$ deepdive model learn #Bash
+```
 
+### 3.5 Identify Stale Cells and Repair
+Run the Java main code: https://github.com/zzheng0620/CurrentClean/tree/main/src/CurrentClean.java
 
 
