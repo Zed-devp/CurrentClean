@@ -119,6 +119,7 @@ Take Sensor dataset (mentioned in Section 2.1) as an example. It generates 5 fil
 |Sensor_16_Voltage	|1522986500|
 | ... ...     | ... ...  |
 
+### 3.4 Learn update patterns
 
 
 
