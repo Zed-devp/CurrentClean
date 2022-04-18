@@ -151,7 +151,7 @@ Continue with the example of Sensor data, you will find two files as the results
 **repairs**: all the possible repairs and probabilities for each stale cell.<br>
 | stale cell (relation_column_attribute)        | value: probability     | value: probability     | value: probability     |
 | ------------- |-------------|-------------|-------------|
-|Sensor_21_Temperature|27.8: 0.6666666666666666|27.7: 0.16666666666666666|28.0: 0.16666666666666666|
+|Sensor_21_Temperature|27.8: 0.67|27.7: 0.17|28.0: 0.16|
 |Sensor_49_Voltage|3.07: 1.0|
 |Sensor_6_Humidity|14.2: 0.5|14.6: 0.25|14.4: 0.25|
 |Sensor_50_Temperature|22.1: 0.5|22.0: 0.5|
