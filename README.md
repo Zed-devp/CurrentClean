@@ -132,9 +132,29 @@ Learn model with Deepdive. <br>
 ```Bash
 $ deepdive model learn #Bash
 ```
-Move the output file UpdPatterns from /CurrentClean/DeepDive/Output/ to /Current/Input/
+Move the output file UpdPatterns from folder /CurrentClean/tree/main/DeepDive/Output/ to folder /CurrentClean/tree/main/Input/
 
-### 3.5 Identify Stale Cells and Repair
-Run the Java main code: /CurrentClean/tree/main/src/CurrentClean.java
+### 3.5 Identify and Repair Stale Cells 
+Run the Java main code CurrentClean.java in folder /CurrentClean/tree/main/src/, and find the restults in folder /CurrentClean/tree/main/Output. <br>
+
+Continue with the example of Sensor data, you will find two files as the results: <br>
+**stalecells**: all the identified stale cells with stale probabilities.<br>
+| stale cell (relation_column_attribute)        | probability     |
+| ------------- |-------------|
+|Sensor_47_AirPressure| 0.90 |
+|Sensor_48_Temperature| 0.84 |
+|Sensor_8_Temperature | 0.83 |
+|Sensor_9_Humidity    | 0.94 |
+|... ...| ... ...|
+
+**repairs**: all the possible repairs and probabilities for each stale cell.<br>
+| stale cell (relation_column_attribute)        | value: probability     | value: probability     | value: probability     |
+| ------------- |-------------|-------------|-------------|
+|Sensor_21_Temperature|27.8:0.6666666666666666|27.7:0.16666666666666666|28.0:0.16666666666666666|
+|Sensor_49_Voltage|3.07:1.0|
+|Sensor_6_Humidity|14.2:0.5|14.6:0.25|14.4:0.25|
+|Sensor_50_Temperature|22.1:0.5|22.0:0.5|
+|... ...| ... ...|
+
 
 
