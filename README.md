@@ -70,5 +70,55 @@ CurrentClean uses DeepDive to extend probabilistic inference with logical reason
 
 Please follow the steps to launch or install DeepDive: <a href="http://deepdive.stanford.edu/quickstart">DeepDive Quick Start</a>
 
-### 3.3 
+### 3.3 Preprocess Dataset
+Run <a href="https://github.com/zzheng0620/CurrentClean/tree/main/DeepDive">utility.py</a> to generate input files for DeepDive. <br>
+Take Sensor dataset (mentioned in Section 2.1) as an example. It generates 5 files as follows: <br>
+
+**cell.tsv**: all the cells in a relation. <br>
+| relation_column_attribute        | relation_column      | relation_attribute  |
+| ------------- |-------------| ------------|
+| Sensor_1_Temperature   | Sensor_1   |   Sensor_Temperature |
+| Sensor_1_Humidity      | Sensor_1   |   Sensor_Humidity    |
+| Sensor_1_AirPressure   | Sensor_1   |   Sensor_AirPressure |
+| Sensor_1_Voltage       | Sensor_1   |   Sensor_Voltage     |
+| Sensor_2_Temperature   | Sensor_2   |   Sensor_Temperature |
+| ... ...     | ... ...  |   ... ...    |
+
+**lastupd.tsv**: each cell and its last update time. <br>
+| relation_column_attribute        | timestamp     |
+| ------------- |-------------|
+| Sensor_12_Voltage	|1522986490|
+| Sensor_29_Voltage	|1522986490|
+|Sensor_51_Voltage	|1522986490|
+|Sensor_53_Voltage	|1522986490|
+| ... ...     | ... ...  |
+
+**probabilistic.tsv**: attribute name in the relation. <br>
+| relation_attribute  |
+| ------------- |
+| Sensor_Temperature|
+| Sensor_Humidity|
+| Sensor_AirPressure|
+| Sensor_Voltage|
+
+**time.tsv**: all the update times in the history. <br>
+| timestamp  |
+| ------------- |
+| 1522986490|
+|1522986500|
+|1522986510|
+|1522986520|
+|... ...|
+
+**updated.tsv**: all the updated cells with times in the history. <br>
+| relation_column_attribute        | timestamp     |
+| ------------- |-------------|
+| Sensor_57_Voltage	|1522986490|
+|Sensor_8_Voltage	|1522986490|
+|Sensor_13_Voltage	|1522986500|
+|Sensor_16_Voltage	|1522986500|
+| ... ...     | ... ...  |
+
+
+
 
