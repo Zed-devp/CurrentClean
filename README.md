@@ -164,6 +164,9 @@ Source code is available at https://github.com/mac-dsl/CurrentClean.
 [1] M. Milani, Z. Zheng, and F. Chiang. Currentclean: Spatio-temporal cleaning of stale data. 2019 IEEE 35th International Conference on Data Engineering
 (ICDE), pages 172–183, 2019. <br>
 [2] Z. Zheng, T. M. Quach, Z. Jin, F. Chiang, and M. Milani. Currentclean: Interactive change exploration and cleaning of stale data. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM ’19, page 2917–2920, 2019.<br>
-[3] CurrentClean: Extended evaluation,” http://www.cas.mcmaster.ca/∼zhengz13/currentclean.html, 2019.
+[3] A. Johnson, T. Pollard, M. Ghassemi, B. Moody, P. Szolovits, and R. Mark, “MIMIC-III, a freely accessible critical care database,” Scientific Data, vol. 3, no. 160035, 2016. <br>
+[4] Cinnos Mission Critical, “Data center readings,” https://www.cas.mcmaster.ca/∼zhengz13/Dataset/Sensor.rar, 2018. <br>
+[5] D. Chen, “Online retail data set,” https://archive.ics.uci.edu/ml/, 2015 <br>
+[6] J. Grosz and N. Rippner, “NBA player data 1978-2016,” https://data.world/jgrosz99/nba-player-data-1978-2016/, 2017.
 
 
