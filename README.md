@@ -60,7 +60,7 @@ We collected sensor readings from a corporate data center reporting temperature,
 ### 2.4 NBA
 <p>The <a href="http://www.cas.mcmaster.ca/~zhengz13/Dataset/NBA.zip" download="NBA.zip">NBA dataset</a> provides player statistics for 3000 NBA players, and their teams from 1978 to 2016. We extract the updates each year by comparing successive instances, to reflect changes such as player salaries, and trades. We use this dataset to evaluate the prevalence of update patterns and relational chains. The schema can be found at <a href="https://data.world/jgrosz99/nba-player-data-1978-2016/workspace/data-dictionary">NBASchema</a>, and the&nbsp;<a href="https://www.basketball-reference.com/about/glossary.html">Glossary</a> describes each attribute.</p>
 
-## 3 Getting Started
+## 3. Getting Started
 ### 3.1 Prerequisites
 Java v1.8 <br>
 DeepDive v0.8.0 <br>
@@ -157,5 +157,13 @@ Continue with the example of Sensor data, you will find two files as the results
 |Sensor_50_Temperature|22.1: 0.5|22.0: 0.5|
 |... ...| ... ...|
 
+## 4. Source Code
+Source code is available at https://github.com/mac-dsl/CurrentClean.
+
+## 5. References
+[1] M. Milani, Z. Zheng, and F. Chiang. Currentclean: Spatio-temporal cleaning of stale data. 2019 IEEE 35th International Conference on Data Engineering
+(ICDE), pages 172–183, 2019.
+[2] Z. Zheng, T. M. Quach, Z. Jin, F. Chiang, and M. Milani. Currentclean: Interactive change exploration and cleaning of stale data. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM ’19, page 2917–2920, 2019.
+[3] CurrentClean: Extended evaluation,” http://www.cas.mcmaster.ca/∼zhengz13/currentclean.html, 2019.
 
 
