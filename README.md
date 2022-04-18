@@ -136,6 +136,7 @@ Move the output file UpdPatterns from folder /CurrentClean/tree/main/DeepDive/Ou
 
 ### 3.5 Identify and Repair Stale Cells 
 Run the Java main code CurrentClean.java in folder /CurrentClean/tree/main/src/, and find the restults in folder /CurrentClean/tree/main/Output. <br>
+
 Continue with the example of Sensor data, you will find two files as the results: <br>
 
 **stalecells**: all the identified stale cells with stale probabilities.<br>
