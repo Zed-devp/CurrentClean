@@ -162,8 +162,8 @@ Source code is available at https://github.com/mac-dsl/CurrentClean.
 
 ## 5. References
 [1] M. Milani, Z. Zheng, and F. Chiang. Currentclean: Spatio-temporal cleaning of stale data. 2019 IEEE 35th International Conference on Data Engineering
-(ICDE), pages 172–183, 2019.
-[2] Z. Zheng, T. M. Quach, Z. Jin, F. Chiang, and M. Milani. Currentclean: Interactive change exploration and cleaning of stale data. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM ’19, page 2917–2920, 2019.
+(ICDE), pages 172–183, 2019. <br>
+[2] Z. Zheng, T. M. Quach, Z. Jin, F. Chiang, and M. Milani. Currentclean: Interactive change exploration and cleaning of stale data. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management, CIKM ’19, page 2917–2920, 2019.<br>
 [3] CurrentClean: Extended evaluation,” http://www.cas.mcmaster.ca/∼zhengz13/currentclean.html, 2019.
 
 
