@@ -132,8 +132,9 @@ Learn model with Deepdive. <br>
 ```Bash
 $ deepdive model learn #Bash
 ```
+Move the output file UpdPatterns from /CurrentClean/DeepDive/Output/ to /Current/Input/
 
 ### 3.5 Identify Stale Cells and Repair
-Run the Java main code: https://github.com/zzheng0620/CurrentClean/tree/main/src/CurrentClean.java
+Run the Java main code: /CurrentClean/tree/main/src/CurrentClean.java
 
 
